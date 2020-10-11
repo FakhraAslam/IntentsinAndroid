@@ -30,20 +30,20 @@ public class MainActivity extends AppCompatActivity {
 
                 //Now Implicit Intent
                 Button btnGetURL;
-                final EditText etGetUrl;
-                etGetUrl=findViewById(R.id.et_get_url);
+        final EditText etNum1;
+                final EditText etNum2;
+               etNum1=findViewById(R.id.et_1st_num);
+               etNum2=findViewById(R.id.et_2nd_num);
                 btnGetURL=findViewById(R.id.btn_get_url);
                 btnGetURL.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Toast.makeText(MainActivity.this,"running",Toast.LENGTH_LONG);
-                       String url=etGetUrl.getText().toString();
-                       Intent intent=new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-                       /*Parameters
-                       1st : URLs k liy actionView jo k intent ki class s h usy dety hein
-                       2nd : uri pass krna hota h hmary pass chunk wo string format m h user s string format m get kia h to usy
-                              uri m parse kr k dalein gay*/
-                       startActivity(intent);
+                   int num1=Integer.parseInt(etNum1.getText().toString());
+                   int num2=Integer.parseInt(etNum2.getText().toString());
+                   int num3=num1+num2;
+                   Intent intent=new Intent(MainActivity.this,ResultActivity.class);
+                   intent.putExtra("sum",num1+"+"+num2+num3);
+               startActivity(intent);
                     }
                 });
 

@@ -42,15 +42,22 @@
   <EditText
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:hint="URL"
-      android:id="@+id/et_get_url">
+      android:hint="Enter first Num"
+      android:id="@+id/et_1st_num">
 
   </EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Second Num"
+        android:id="@+id/et_2nd_num">
+
+    </EditText>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn_get_url"
-        android:text="Go to Url"
+        android:text="Addition"
         android:layout_gravity="center">
     </Button>
 </LinearLayout>
