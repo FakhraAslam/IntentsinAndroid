@@ -4,15 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity"
-    android:gravity="center">
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Explicit Intent"
+        android:layout_margin="20dp">
+
+    </TextView>
+    <Button
+        android:id="@+id/btn_go_to_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go To Result"
+        android:gravity="center"
+
+        android:layout_marginLeft="80dp">
+
+
+    </Button>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Implicit Intent"
+        android:layout_margin="20dp">
+
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please Enter URL of any website you want to go"
+        android:layout_margin="20dp">
+
+    </TextView>
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="URL"
+      android:id="@+id/et_get_url">
+
+  </EditText>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_go_to_result"
-        android:text="Go To Result"
-        >
-
+        android:id="@+id/btn_get_url"
+        android:text="Go to Url"
+        android:layout_gravity="center">
     </Button>
-
 </LinearLayout>
